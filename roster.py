@@ -1,7 +1,20 @@
 # The little program we fix together in class.
 # Run it with:  python roster.py
 
-API_KEY = "sk_live_9fK2xQm00Zq"
+import os
+
+
+def load_env(path=".env"):
+    """Read KEY=value lines out of .env and into the environment."""
+    for line in open(path):
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            key, value = line.split("=", 1)
+            os.environ[key] = value
+
+
+load_env()
+API_KEY = os.environ["API_KEY"]
 
 STUDENTS = [
     "Ava Patel",
