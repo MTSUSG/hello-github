@@ -1,0 +1,4 @@
+# Anything listed here, Git pretends does not exist.
+
+.env
+__pycache__/
