@@ -6,7 +6,8 @@ API_KEY = "sk_live_9fK2xQm00Zq"
 STUDENTS = [
     "Ava Patel",
     "Ben Ortiz",
-    "Chris Nguyen",
+    "Chris Nguyen", 
+    "Steven Gobran", 
 ]
 
 
